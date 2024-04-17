@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class base
+{
+public:
+    base()
+    {
+        cout << "base class const\n";
+    }
+};
+
+class der : public base
+{
+public:
+    der()
+    {
+        cout << "derived class const\n";
+    }
+};
+
+int main()
+{
+    der d;
+}
